@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #fff;
+  background-color: #fcb;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-family: "Lalezar", system-ui;
+  font-family: "Tajawal", sans-serif;
+}
+.quiz {
+  background-color: #122;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.count {
+  color: #199;
+  padding: 10px;
+  text-align: center;
+}
+.answer-area {
+  padding: 5px;
+}
+.answer {
+  padding: 5px;
+  background-color: #133;
+  margin: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.answer input[type="radio"]:checked + label {
+  color: #3d8beb;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.answer label {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.submit {
+  display: flex;
+  margin: auto;
+  padding: 5px 10px;
+  border: none;
+  background-color: #166;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+.spans {
+  margin: 10px 0px;
+  background-color: #133;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.spans span {
+  background-color: #ddd;
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 400px) {
+  .spans span {
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+  }
+}
+.spans span.on {
+  background-color: #199;
+}
+.spans span.off {
+  background-color: rgb(153, 33, 17);
+}
+.countdouwn {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.quiz .results {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+}
+.quiz .results span.good {
+  color: green;
+}
+.quiz .results span.bad {
+  color: red;
+}
+.quiz .results span.perfect {
+  color: #199;
+}
